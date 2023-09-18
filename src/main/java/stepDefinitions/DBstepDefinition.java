@@ -160,6 +160,7 @@ public class DBstepDefinition {
         String addQuery=ConfigReader.getProperty("query05");
 
         int rowAffected = statement.executeUpdate(addQuery);
+        System.out.println(rowAffected);
 
         assertTrue(rowAffected>0);
 
@@ -173,6 +174,7 @@ public class DBstepDefinition {
         String deleteQuery= ConfigReader.getProperty("query06");
 
         int deleteRowCount= statement.executeUpdate(deleteQuery);
+        System.out.println(deleteRowCount);
 
         assertTrue(deleteRowCount>0);
 
